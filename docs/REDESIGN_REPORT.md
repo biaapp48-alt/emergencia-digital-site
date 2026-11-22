@@ -152,8 +152,20 @@ e DevTools Protocol.
 ## 6. Publicação
 
 - Deploy automático via GitHub Actions (`main` → GitHub Pages).
-- **Status:** aguardando commit/push e verificação da URL publicada.
-- URL esperada: `https://biaapp48-alt.github.io/emergencia-digital-site/`.
+- **Commit do redesign:** `2190f5b` —
+  `feat: redesign premium da landing com Bia como nucleo do ecossistema`.
+- **Workflow:** run `45021454070` — concluído com sucesso (build + deploy).
+- **URL publicada:** `https://biaapp48-alt.github.io/emergencia-digital-site/`.
+- **Verificação ao vivo (22/11/2026):**
+  - HTTP 200 para página inicial, política de privacidade, CSS, JavaScript,
+    logo, imagem Open Graph, `sitemap.xml` e `robots.txt`.
+  - DOM renderizado: 10 seções, 7 cards da Bia, 6 módulos do ecossistema,
+    3 planos, 4 módulos adicionais, 9 perguntas no FAQ e 8 serviços da agência.
+  - 3 ocorrências de “Sob consulta” e H1 exato confirmado.
+  - Sem overflow horizontal em 1440 px e 390 px.
+  - Sem imagens quebradas, âncoras internas inválidas ou erros de console.
+  - Política de privacidade: `legal.css` carregado, 8 campos `[PENDENTE]`,
+    âncora `#termos` presente e sem overflow.
 
 ## 7. Pendências de validação comercial
 
