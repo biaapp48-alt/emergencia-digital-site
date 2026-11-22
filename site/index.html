@@ -3,52 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergência Digital | Bia — Atendimento inteligente, automação e CRM</title>
-  <meta name="description" content="Uma plataforma inteligente que conecta atendimento, automação e CRM para transformar conversas em oportunidades de negócio. Conheça a Bia, a assistente da Emergência Digital.">
-  <meta name="theme-color" content="#009445">
+  <meta name="color-scheme" content="dark">
+  <script>document.documentElement.classList.add("js");</script>
+  <title>Emergência Digital | Ecossistema de Crescimento Empresarial com a Bia</title>
+  <meta name="description" content="A Bia conecta inteligência artificial, atendimento, CRM, sites e automações para simplificar a operação comercial da sua empresa. Conheça o ecossistema de crescimento da Emergência Digital.">
+  <meta name="theme-color" content="#05070e">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Emergência Digital">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Emergência Digital | Bia — Atendimento inteligente, automação e CRM">
-  <meta property="og:description" content="Sua empresa atendendo, organizando e convertendo oportunidades com inteligência artificial.">
+  <meta property="og:title" content="Emergência Digital | Ecossistema de Crescimento Empresarial com a Bia">
+  <meta property="og:description" content="Sua empresa atrai oportunidades. A Bia transforma conversas em crescimento.">
   <meta property="og:image" content="assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="Emergência Digital — Bia, assistente de atendimento inteligente">
+  <meta property="og:image:alt" content="Emergência Digital — Bia, inteligência operacional e ecossistema de crescimento">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Emergência Digital | Bia — Atendimento inteligente, automação e CRM">
-  <meta name="twitter:description" content="Sua empresa atendendo, organizando e convertendo oportunidades com inteligência artificial.">
+  <meta name="twitter:title" content="Emergência Digital | Ecossistema de Crescimento Empresarial com a Bia">
+  <meta name="twitter:description" content="Sua empresa atrai oportunidades. A Bia transforma conversas em crescimento.">
   <meta name="twitter:image" content="assets/og-image.png">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <!-- ===================== HEADER ===================== -->
-  <header class="site-header">
+  <header class="site-header" data-header>
     <div class="container site-header__inner">
-      <a class="brand" href="#hero" aria-label="Emergência Digital — início">
-        <img src="assets/logo.png" alt="Emergência Digital" width="177" height="48">
+      <a class="brand" href="#inicio" aria-label="Emergência Digital — início">
+        <img class="brand__logo" src="assets/logo.png" alt="Emergência Digital" width="708" height="195">
       </a>
 
       <nav class="nav" aria-label="Principal">
-        <a href="#problema">O problema</a>
-        <a href="#bia">A Bia</a>
-        <a href="#funil">Funil</a>
-        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#inicio">Início</a>
+        <a href="#bia">Bia IA</a>
+        <a href="#ecossistema">Ecossistema</a>
         <a href="#planos">Planos</a>
-        <a href="#faq">Dúvidas</a>
+        <a href="#agencia">Agência Premium</a>
       </nav>
 
-      <a class="header-cta header-cta--desktop" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.6.7 1.7.1.1.1.3 0 .5-.4.8-.9.9-.7 1.3.9 1.5 2 2.4 3.4 3.1.2.1.4.1.5-.1.1-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.2.6 1.4.7.2.1.4.2.4.3.1.1.1.5-.1 1.1Z"/></svg>
-        WhatsApp
+      <a class="btn btn--primary btn--sm header-cta" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
+        Fale com a equipe
       </a>
 
       <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Abrir menu de navegação" aria-controls="mobile-nav">
@@ -57,309 +60,426 @@
     </div>
 
     <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
-      <a href="#problema">O problema</a>
-      <a href="#bia">A Bia</a>
-      <a href="#funil">Funil</a>
-      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#inicio">Início</a>
+      <a href="#bia">Bia IA</a>
+      <a href="#ecossistema">Ecossistema</a>
+      <a href="#como-funciona">Como funciona</a>
       <a href="#planos">Planos</a>
+      <a href="#modulos">Módulos adicionais</a>
+      <a href="#agencia">Agência Premium</a>
       <a href="#faq">Dúvidas</a>
-      <a class="btn btn--primary" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn btn--primary" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Fale com a equipe</a>
     </div>
   </header>
 
   <main id="conteudo">
-    <!-- ===================== HERO ===================== -->
-    <section class="hero" id="hero" aria-label="Apresentação">
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero" id="inicio" aria-label="Apresentação">
       <div class="hero__bg" aria-hidden="true">
-        <img src="assets/hero-bg.png" alt="" fetchpriority="high">
+        <span class="hero__glow hero__glow--green"></span>
+        <span class="hero__glow hero__glow--cyan"></span>
+        <span class="hero__grid"></span>
       </div>
-      <div class="hero__overlay" aria-hidden="true"></div>
 
-      <div class="container hero__grid">
+      <div class="container hero__grid-wrap">
         <div class="hero__copy">
-          <span class="eyebrow eyebrow--light"><span class="dot"></span> Plataforma inteligente de atendimento</span>
-          <h1>Sua empresa atendendo, organizando e convertendo oportunidades com <span class="accent">inteligência artificial</span>.</h1>
-          <p class="hero__lead">Uma plataforma inteligente que conecta atendimento, automação e CRM para transformar conversas em oportunidades de negócio.</p>
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Ecossistema de crescimento empresarial</span>
+          <h1 class="hero__title">
+            Sua empresa atrai oportunidades.
+            <span class="grad-text">A Bia transforma conversas em crescimento.</span>
+          </h1>
+          <p class="hero__lead">
+            Uma plataforma que conecta inteligência artificial, atendimento, CRM, sites e automações
+            para simplificar a operação comercial da sua empresa.
+          </p>
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="#bia">
               Conhecer a Bia
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn btn--ghost btn--lg" href="#planos">Conhecer os planos</a>
+            <a class="btn btn--outline btn--lg" href="#ecossistema">Descobrir o ecossistema</a>
           </div>
-          <div class="hero__proof">
-            <div class="hero__proof-item"><strong>400+</strong><span>pacientes gerados</span></div>
-            <div class="hero__proof-item"><strong>200+</strong><span>oportunidades mapeadas</span></div>
-            <div class="hero__proof-item"><strong>15+</strong><span>parceiros ativos</span></div>
-          </div>
+          <ul class="hero__meta" aria-label="Destaques da plataforma">
+            <li><span class="hero__meta-dot"></span> Bia no centro da operação</li>
+            <li><span class="hero__meta-dot"></span> Módulos contratáveis</li>
+            <li><span class="hero__meta-dot"></span> Agência Premium opcional</li>
+          </ul>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero__ring"></div>
-          <div class="hero__visual-main">
-            <img src="assets/hero-character.png" alt="" loading="eager">
+        <div class="hero__visual reveal" data-core aria-hidden="true">
+          <div class="core">
+            <span class="core__label">Bia · núcleo operacional</span>
+            <div class="core__aura"></div>
+
+            <svg class="core__links" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="linkGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#25e07d" stop-opacity="0.05"/>
+                  <stop offset="0.5" stop-color="#25e07d" stop-opacity="0.6"/>
+                  <stop offset="1" stop-color="#38e8ff" stop-opacity="0.18"/>
+                </linearGradient>
+              </defs>
+              <g class="core__links-g">
+                <line x1="50" y1="50" x2="50" y2="9"/>
+                <line x1="50" y1="50" x2="89" y2="29"/>
+                <line x1="50" y1="50" x2="89" y2="71"/>
+                <line x1="50" y1="50" x2="50" y2="91"/>
+                <line x1="50" y1="50" x2="11" y2="71"/>
+                <line x1="50" y1="50" x2="11" y2="29"/>
+              </g>
+            </svg>
+
+            <div class="core__rings">
+              <span class="core__ring core__ring--1"></span>
+              <span class="core__ring core__ring--2"></span>
+              <span class="core__ring core__ring--3"></span>
+            </div>
+
+            <div class="core__orb">
+              <span class="core__orb-glow"></span>
+              <svg class="core__mark" viewBox="0 0 64 64" fill="none">
+                <defs>
+                  <linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#f2fff8"/>
+                    <stop offset="1" stop-color="#8ff7c0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M20 15h17a10 10 0 0 1 0 20H20V15Z" stroke="url(#markGrad)" stroke-width="4.4" stroke-linejoin="round"/>
+                <path d="M20 35h19a10 10 0 0 1 0 20H20V35Z" stroke="url(#markGrad)" stroke-width="4.4" stroke-linejoin="round"/>
+                <circle cx="49" cy="12" r="4" fill="#38e8ff"/>
+              </svg>
+            </div>
+
+            <span class="core-chip core-chip--1">
+              <span class="core-chip__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.6.7 1.7.1.1.1.3 0 .5-.4.8-.9.9-.7 1.3.9 1.5 2 2.4 3.4 3.1.2.1.4.1.5-.1.1-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.2.6 1.4.7.2.1.4.2.4.3.1.1.1.5-.1 1.1Z"/></svg>
+              </span>
+              <span>WhatsApp</span>
+            </span>
+
+            <span class="core-chip core-chip--2">
+              <span class="core-chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16l-6 7.2V19l-4 2v-8.8L4 5Z"/></svg>
+              </span>
+              <span>CRM</span>
+            </span>
+
+            <span class="core-chip core-chip--3">
+              <span class="core-chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.6 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3Z"/></svg>
+              </span>
+              <span>Sites</span>
+            </span>
+
+            <span class="core-chip core-chip--4">
+              <span class="core-chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+              </span>
+              <span>Automações</span>
+            </span>
+
+            <span class="core-chip core-chip--5">
+              <span class="core-chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <span>Tráfego</span>
+            </span>
+
+            <span class="core-chip core-chip--6">
+              <span class="core-chip__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 16v-4M12 16V8M16 16v-6M20 16v-9"/></svg>
+              </span>
+              <span>Resultados</span>
+            </span>
           </div>
-          <img class="hero__badge hero__badge--1" src="assets/elemento-01.png" alt="" width="150" height="88">
-          <img class="hero__badge hero__badge--2" src="assets/elemento-02.png" alt="" width="120" height="69">
         </div>
       </div>
     </section>
 
-    <!-- ===================== PROBLEMA ===================== -->
-    <section class="section section--tint" id="problema">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow"><span class="dot"></span> O problema</span>
-          <h2 class="section-title section-title--center">Sua equipe está afogada em conversas sem direção</h2>
-          <p class="section-sub section-sub--center">Enquanto o atendimento depende de processos manuais, oportunidades valiosas se perdem todos os dias.</p>
-        </div>
-
-        <div class="problem-grid">
-          <article class="problem-card reveal">
-            <div class="problem-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-            <h3>Clientes esperando atendimento</h3>
-            <p>Fila de mensagens sem resposta e demora que afasta quem quer comprar agora.</p>
-          </article>
-
-          <article class="problem-card reveal" data-delay="1">
-            <div class="problem-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-7"/></svg></div>
-            <h3>Oportunidades perdidas</h3>
-            <p>Contatos que chegam quentes esfriam sem um acompanhamento estruturado.</p>
-          </article>
-
-          <article class="problem-card reveal" data-delay="2">
-            <div class="problem-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.7A8.5 8.5 0 1 1 21 11.5Z"/></svg></div>
-            <h3>Mensagens sem resposta</h3>
-            <p>WhatsApp, redes e formulários espalhados — cada canal vira uma caixa isolada.</p>
-          </article>
-
-          <article class="problem-card reveal">
-            <div class="problem-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h10M4 19h13"/></svg></div>
-            <h3>Informações desorganizadas</h3>
-            <p>Dados de clientes em planilhas, blocos de notas e na memória de cada atendente.</p>
-          </article>
-
-          <article class="problem-card reveal" data-delay="1">
-            <div class="problem-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0M16 4.5a3 3 0 0 1 0 6M21 20a5 5 0 0 0-4-4.9"/></svg></div>
-            <h3>Dificuldade de acompanhar contatos</h3>
-            <p>Sem histórico centralizado, ninguém sabe em que etapa cada conversa está.</p>
-          </article>
-
-          <article class="problem-card reveal" data-delay="2">
-            <div class="problem-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8M10 3v4l-3 8h10l-3-8V3"/><path d="M9 18h6M10 21h4"/></svg></div>
-            <h3>Processos 100% manuais</h3>
-            <p>Atendimento que só anda quando alguém lembra de responder, anotar e seguir.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== BIA ===================== -->
+    <!-- ===================== 2. CONHEÇA A BIA ===================== -->
     <section class="section" id="bia">
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow"><span class="dot"></span> Conheça a Bia</span>
-          <h2 class="section-title section-title--center">Sua assistente inteligente de atendimento</h2>
-          <p class="section-sub section-sub--center">A Bia centraliza conversas, organiza contatos e automatiza o que antes dependia de alguém lembrar de fazer.</p>
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Conheça a Bia</span>
+          <h2 class="section-title">Conheça a Bia. Sua inteligência operacional.</h2>
+          <p class="section-sub">
+            A Bia foi criada para assumir a parte operacional e repetitiva do atendimento, organizar
+            oportunidades e ajudar sua empresa a não perder conversas importantes.
+          </p>
         </div>
 
         <div class="bia-grid" id="bia-list"><!-- renderizado via config.js --></div>
 
-        <div class="bia-note reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
-          <p><strong>Transparência sobre o produto:</strong> os recursos marcados como “Em desenvolvimento” fazem parte da arquitetura planejada da plataforma (atendimento conversacional por IA, interpretação de mensagens e modalidades de texto, áudio e imagem) e ainda não estão disponíveis em produção. Os marcados como “Disponível” têm base no sistema existente da Emergência Digital.</p>
+        <div class="info-note reveal">
+          <span class="info-note__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          </span>
+          <p>
+            <strong>Transparência sobre o produto:</strong> os recursos marcados como
+            <strong>“Em desenvolvimento”</strong> fazem parte da evolução da plataforma e ainda não estão
+            disponíveis em produção. Os marcados como <strong>“Disponível”</strong> têm base no sistema
+            existente da Emergência Digital. A versão multiempresa do SaaS está em desenvolvimento.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== FUNIL ===================== -->
-    <section class="section section--tint" id="funil">
+    <!-- ===================== 3. ECOSSISTEMA ===================== -->
+    <section class="section section--tint" id="ecossistema">
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow"><span class="dot"></span> O funil inteligente</span>
-          <h2 class="section-title section-title--center">Da primeira mensagem à conversão</h2>
-          <p class="section-sub section-sub--center">Cada conversa avança por etapas claras, com automação e acompanhamento em cada movimento.</p>
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> O ecossistema</span>
+          <h2 class="section-title">Tudo conectado. Um único ecossistema de crescimento.</h2>
+          <p class="section-sub">
+            A Bia é o núcleo. Ao redor dela, módulos organizam a operação comercial — da atração do
+            contato ao acompanhamento dos resultados.
+          </p>
         </div>
 
-        <div class="funnel__wrap">
-          <div class="funnel__art reveal">
-            <img src="assets/raio-x.svg" alt="Ilustração do funil de atendimento e conversão da Emergência Digital" loading="lazy">
+        <div class="eco-grid" id="ecosystem-list"><!-- renderizado via config.js --></div>
+
+        <div class="info-note info-note--muted reveal">
+          <span class="info-note__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <p>
+            Os módulos são apresentados como partes de um mesmo ecossistema. Integrações que ainda não
+            estão operacionais serão configuradas conforme a disponibilidade e o escopo de cada contratação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. COMO O ECOSSISTEMA TRABALHA ===================== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Como o ecossistema trabalha</span>
+          <h2 class="section-title">Da atração ao crescimento, em um fluxo contínuo.</h2>
+          <p class="section-sub">
+            Cada etapa se conecta à seguinte — e o acompanhamento de resultados fecha o ciclo.
+          </p>
+        </div>
+
+        <div class="flow" aria-label="Fluxo do ecossistema">
+          <div class="flow__step reveal">
+            <span class="flow__num">01</span>
+            <span class="flow__name">Atrair</span>
+            <p>Site ou campanha gera o contato.</p>
           </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <div class="flow__step reveal" data-delay="1">
+            <span class="flow__num">02</span>
+            <span class="flow__name">Atender</span>
+            <p>A Bia recebe e conduz a conversa, conforme os recursos disponíveis.</p>
+          </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <div class="flow__step reveal" data-delay="2">
+            <span class="flow__num">03</span>
+            <span class="flow__name">Organizar</span>
+            <p>O CRM organiza o contato e a oportunidade.</p>
+          </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <div class="flow__step reveal" data-delay="3">
+            <span class="flow__num">04</span>
+            <span class="flow__name">Automatizar</span>
+            <p>Automações auxiliam no acompanhamento.</p>
+          </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <div class="flow__step reveal" data-delay="4">
+            <span class="flow__num">05</span>
+            <span class="flow__name">Converter</span>
+            <p>A equipe avança a oportunidade com contexto.</p>
+          </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+          <div class="flow__step reveal" data-delay="5">
+            <span class="flow__num">06</span>
+            <span class="flow__name">Crescer</span>
+            <p>A empresa acompanha seus resultados.</p>
+          </div>
+        </div>
 
-          <ol class="funnel-steps">
-            <li class="funnel-step reveal">
-              <span class="funnel-step__num">1</span>
-              <div class="funnel-step__body">
-                <h3>Lead recebido</h3>
-                <p>O contato chega pelo WhatsApp ou formulário e entra automaticamente no fluxo.</p>
-              </div>
-            </li>
-            <li class="funnel-step reveal" data-delay="1">
-              <span class="funnel-step__num">2</span>
-              <div class="funnel-step__body">
-                <h3>Primeiro atendimento</h3>
-                <p>Resposta imediata, sem deixar a conversa esfriar.</p>
-              </div>
-            </li>
-            <li class="funnel-step reveal" data-delay="2">
-              <span class="funnel-step__num">3</span>
-              <div class="funnel-step__body">
-                <h3>Qualificação</h3>
-                <p>Perguntas certas para entender a necessidade e o momento de compra.</p>
-              </div>
-            </li>
-            <li class="funnel-step reveal" data-delay="1">
-              <span class="funnel-step__num">4</span>
-              <div class="funnel-step__body">
-                <h3>Oportunidade identificada</h3>
-                <p>O contato é classificado e priorizado com base no potencial real.</p>
-              </div>
-            </li>
-            <li class="funnel-step reveal" data-delay="2">
-              <span class="funnel-step__num">5</span>
-              <div class="funnel-step__body">
-                <h3>Agendamento ou encaminhamento</h3>
-                <p>O próximo passo é agendado ou direcionado para a pessoa certa da equipe.</p>
-              </div>
-            </li>
-            <li class="funnel-step reveal" data-delay="3">
-              <span class="funnel-step__num">6</span>
-              <div class="funnel-step__body">
-                <h3>Conversão</h3>
-                <p>A oportunidade vira negócio, registrada e mensurável no CRM.</p>
-              </div>
-            </li>
-          </ol>
+        <div class="flow-chain reveal" aria-hidden="true">
+          <span>Site ou campanha</span>
+          <i></i>
+          <span>Bia</span>
+          <i></i>
+          <span>CRM</span>
+          <i></i>
+          <span>Automações</span>
+          <i></i>
+          <span>Resultados</span>
         </div>
       </div>
     </section>
 
-    <!-- ===================== FUNCIONALIDADES ===================== -->
-    <section class="section" id="funcionalidades">
+    <!-- ===================== 5. PLANOS ===================== -->
+    <section class="section section--tint" id="planos">
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow"><span class="dot"></span> Funcionalidades</span>
-          <h2 class="section-title section-title--center">Uma plataforma, vários módulos</h2>
-          <p class="section-sub section-sub--center">Ferramentas que trabalham juntas para atender, organizar e converter.</p>
-        </div>
-
-        <div class="features-grid">
-          <article class="feature-card reveal">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 1 4 4v1h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1V7a4 4 0 0 1 4-4Z"/><circle cx="12" cy="14" r="1.4"/></svg></div>
-            <h3>Bia AI</h3>
-            <p>Assistente inteligente que entende a conversa e responde com contexto.</p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="1">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.7A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 11.5h.01M12 11.5h.01M16 11.5h.01"/></svg></div>
-            <h3>WhatsApp Business</h3>
-            <p>Atendimento centralizado no canal onde seus clientes já estão.</p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="2">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M4 9h16M9 9v10"/></svg></div>
-            <h3>CRM inteligente</h3>
-            <p>Funil de vendas com etapas, histórico e priorização de oportunidades.</p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="3">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0M16 4.5a3 3 0 0 1 0 6M21 20a5 5 0 0 0-4-4.9"/></svg></div>
-            <h3>Gestão de contatos</h3>
-            <p>Cadastro único com segmentação, tags e histórico completo.</p>
-          </article>
-
-          <article class="feature-card reveal">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M4 8v10a2 2 0 0 0 2 2h10"/></svg></div>
-            <h3>Automações</h3>
-            <p>Regras que disparam mensagens, movem etapas e criam tarefas sozinhas.</p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="1">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-7"/></svg></div>
-            <h3>Análise de conversas</h3>
-            <p>Métricas para entender o que converte e onde as oportunidades se perdem.</p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="2">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V8a5 5 0 0 1 5-5Z"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg></div>
-            <h3>Atendimento multimodal</h3>
-            <p>Arquitetura preparada para texto, áudio e imagem em um só fluxo.</p>
-          </article>
-
-          <article class="feature-card reveal" data-delay="3">
-            <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></div>
-            <h3>Integrações empresariais</h3>
-            <p>Conexão com as ferramentas que sua operação já utiliza.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== PLANOS ===================== -->
-    <section class="section section--ink" id="planos">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow eyebrow--light"><span class="dot"></span> Planos</span>
-          <h2 class="section-title section-title--center" style="color:#eafff2">Conheça nossos planos</h2>
-          <p class="section-sub section-sub--center" style="color:rgba(234,255,242,0.72)">Escolha o modelo que mais combina com o momento da sua empresa.</p>
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Planos da Bia</span>
+          <h2 class="section-title">Escolha como sua empresa quer crescer.</h2>
+          <p class="section-sub">
+            Comece com a inteligência da Bia e amplie seu ecossistema conforme a operação evolui.
+          </p>
         </div>
 
         <div class="plans-grid" id="plans-list"><!-- renderizado via config.js --></div>
+
+        <p class="plans-note reveal">
+          Todos os planos são apresentados <strong>sob consulta</strong>. Valores, limites e escopo são
+          definidos com a equipe, de acordo com a necessidade da sua operação.
+        </p>
       </div>
     </section>
 
-    <!-- ===================== DEMO ===================== -->
-    <section class="section" id="demo">
+    <!-- ===================== 6. MÓDULOS ADICIONAIS ===================== -->
+    <section class="section" id="modulos">
       <div class="container">
-        <div class="demo__wrap">
-          <div class="reveal">
-            <span class="eyebrow"><span class="dot"></span> Demonstração</span>
-            <h2 class="section-title" style="margin-top:14px">Veja a Bia em ação</h2>
-            <p class="section-sub">Uma simulação de como a Bia conversa com um cliente, qualifica o contato e encaminha o atendimento — sem conectar a nenhum número ou sistema real.</p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" data-contact="whatsapp" href="#" target="_blank" rel="noopener">Solicitar uma demonstração real</a>
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Módulos adicionais</span>
+          <h2 class="section-title">Monte o ecossistema do seu jeito.</h2>
+          <p class="section-sub">
+            Alguns módulos poderão ser contratados separadamente, de acordo com a necessidade da empresa.
+            A Bia continua sendo o eixo central da proposta — você não precisa contratar todos os módulos.
+          </p>
+        </div>
+
+        <div class="modules-grid" id="modules-list"><!-- renderizado via config.js --></div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. AGÊNCIA PREMIUM ===================== -->
+    <section class="section" id="agencia">
+      <div class="container">
+        <div class="agency-panel reveal">
+          <span class="agency-panel__glow agency-panel__glow--purple" aria-hidden="true"></span>
+          <span class="agency-panel__glow agency-panel__glow--green" aria-hidden="true"></span>
+
+          <div class="agency-panel__grid">
+            <div class="agency-panel__copy">
+              <span class="eyebrow eyebrow--purple"><span class="eyebrow__dot"></span> Agência Premium</span>
+              <h2 class="agency-panel__title">Quer ir além? Conheça a Agência Premium.</h2>
+              <p class="agency-panel__sub">
+                A inteligência da Bia trabalhando junto com uma equipe especializada para acelerar o
+                crescimento da sua empresa.
+              </p>
+              <p class="agency-panel__note">
+                A Agência Premium é opcional. Você pode contratar a plataforma sem contratar a agência —
+                ou contratar serviços específicos conforme a necessidade e a disponibilidade.
+              </p>
+
+              <div class="agency-panel__diff">
+                <span class="agency-panel__diff-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>
+                </span>
+                <div>
+                  <strong>Nosso diferencial</strong>
+                  <p>
+                    Os anúncios e criativos atraem pessoas interessadas, e a Bia participa da etapa de
+                    atendimento e organização dessas oportunidades, reduzindo a dependência de trabalho manual.
+                  </p>
+                </div>
+              </div>
+
+              <a class="btn btn--purple btn--lg" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
+                Conhecer a Agência Premium
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
             </div>
-            <div class="trust-note">
-              <img src="assets/cash-back.svg" alt="" width="54" height="54" loading="lazy">
-              <p><strong>Parceria por resultado.</strong> Modelos de contrato flexíveis — sem fidelidade forçada.</p>
+
+            <div class="agency-panel__services">
+              <div class="agency-panel__services-head">
+                <span>Serviços da agência</span>
+                <span class="agency-panel__tag">Opcional</span>
+              </div>
+              <ul id="agency-services"><!-- renderizado via config.js --></ul>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="reveal" data-delay="1" style="position:relative">
-            <span class="demo-badge">Simulação — não é um atendimento real</span>
+    <!-- ===================== 8. DEMONSTRAÇÃO ===================== -->
+    <section class="section section--tint" id="demo">
+      <div class="container">
+        <div class="demo-wrap">
+          <div class="demo-copy reveal">
+            <span class="eyebrow"><span class="eyebrow__dot"></span> Demonstração</span>
+            <h2 class="section-title">Veja como o ecossistema pode funcionar na sua empresa.</h2>
+            <p class="section-sub">
+              Uma conversa ilustrativa mostra como a Bia pode receber o contato, organizar a oportunidade
+              e encaminhar o próximo passo — com clareza e contexto.
+            </p>
+            <ul class="demo-points">
+              <li><span class="demo-points__dot"></span> Atendimento com contexto</li>
+              <li><span class="demo-points__dot"></span> Contato organizado no CRM</li>
+              <li><span class="demo-points__dot"></span> Encaminhamento para a equipe</li>
+            </ul>
+            <a class="btn btn--primary btn--lg" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
+              Solicitar demonstração
+            </a>
+          </div>
+
+          <div class="demo-visual reveal" data-delay="1">
+            <span class="demo-badge">Simulação ilustrativa — não é um atendimento real</span>
             <div class="chat" data-demo-chat aria-label="Demonstração simulada de conversa com a Bia">
               <div class="chat__head">
-                <div class="chat__avatar">B</div>
-                <div class="chat__head-meta">
-                  <div class="name">Bia · Emergência Digital</div>
-                  <div class="status">online</div>
-                </div>
+                <span class="chat__avatar" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" fill="none"><path d="M20 15h17a10 10 0 0 1 0 20H20V15Z" stroke="currentColor" stroke-width="4.4" stroke-linejoin="round"/><path d="M20 35h19a10 10 0 0 1 0 20H20V35Z" stroke="currentColor" stroke-width="4.4" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="chat__head-meta">
+                  <span class="name">Bia · Emergência Digital</span>
+                  <span class="status-line"><span class="status-line__dot"></span> simulação</span>
+                </span>
               </div>
               <div class="chat__body">
                 <div class="msg msg--in" style="animation-delay:0.2s">
-                  Olá! 👋 Eu sou a Bia, assistente da Emergência Digital. Como posso ajudar você hoje?
+                  Olá! Eu sou a Bia. Como posso ajudar sua empresa hoje?
                   <span class="time">09:01</span>
                 </div>
-                <div class="msg msg--out" style="animation-delay:0.6s">
-                  Quero saber mais sobre o atendimento pelo WhatsApp.
+                <div class="msg msg--out" style="animation-delay:0.7s">
+                  Quero entender como o ecossistema pode organizar meu atendimento.
                   <span class="time">09:02</span>
                 </div>
-                <div class="msg msg--in" style="animation-delay:1.0s">
-                  Perfeito! Posso te mostrar como centralizamos todas as conversas e automatizamos as respostas. Sobre qual área você atua?
+                <div class="msg msg--in" style="animation-delay:1.2s">
+                  Perfeito. Hoje vocês atendem por quais canais?
                   <span class="time">09:02</span>
                 </div>
-                <div class="msg msg--out" style="animation-delay:1.4s">
-                  Tenho uma clínica em Santa Catarina.
+                <div class="msg msg--out" style="animation-delay:1.7s">
+                  Principalmente WhatsApp e Instagram.
                   <span class="time">09:03</span>
                 </div>
-                <div class="msg msg--in" style="animation-delay:1.8s">
-                  Ótimo! 🎯 Você se enquadra no perfil de clínicas que já atendemos. Vou organizar seu contato e encaminhar para um especialista agendar uma apresentação, pode ser?
+                <div class="msg msg--in" style="animation-delay:2.2s">
+                  Entendi. Posso registrar esse contato, organizar a oportunidade no CRM e encaminhar
+                  para um especialista apresentar a configuração ideal.
                   <span class="time">09:03</span>
+                </div>
+                <div class="msg msg--out" style="animation-delay:2.7s">
+                  Pode ser. Como sigo?
+                  <span class="time">09:04</span>
+                </div>
+                <div class="msg msg--in" style="animation-delay:3.2s">
+                  Vou direcionar seu contato para a equipe. Você pode solicitar uma demonstração e
+                  receber uma proposta sob medida.
+                  <span class="time">09:04</span>
                 </div>
               </div>
               <div class="chat__input" aria-hidden="true">
-                <div class="pill">Digite uma mensagem…</div>
-                <div class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg></div>
+                <span class="pill">Digite uma mensagem…</span>
+                <span class="send">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+                </span>
               </div>
             </div>
           </div>
@@ -367,87 +487,35 @@
       </div>
     </section>
 
-    <!-- ===================== FAQ ===================== -->
-    <section class="section section--tint" id="faq">
+    <!-- ===================== 9. FAQ ===================== -->
+    <section class="section" id="faq">
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow"><span class="dot"></span> Perguntas frequentes</span>
-          <h2 class="section-title section-title--center">Dúvidas comuns</h2>
-          <p class="section-sub section-sub--center">Respostas diretas sobre a plataforma, a Bia e o modelo comercial.</p>
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Perguntas frequentes</span>
+          <h2 class="section-title">Dúvidas comuns</h2>
+          <p class="section-sub">Respostas diretas sobre a Bia, os módulos e o modelo comercial.</p>
         </div>
 
-        <div class="faq">
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">O que é a Bia?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">A Bia é a assistente inteligente de atendimento da Emergência Digital. Ela centraliza conversas, organiza contatos e automatiza etapas do atendimento, funcionando como um braço de inteligência que potencializa o trabalho da sua equipe.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">A Bia substitui o atendimento humano?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">Não. A Bia foi desenhada para se integrar à sua estrutura atual, entregando processos e organização para que sua equipe gaste tempo apenas com o que realmente exige atenção humana.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">Preciso de WhatsApp Business para usar?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">O WhatsApp é o principal canal de atendimento da plataforma. O contato chega pelo WhatsApp e é registrado e acompanhado dentro do sistema, junto com a automação de mensagens.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">A Bia funciona com o meu CRM?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">A plataforma possui CRM próprio, com funil de etapas, histórico e priorização. Conversas e contatos ficam integrados ao funil, permitindo acompanhar cada oportunidade do primeiro contato à conversão.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">O atendimento por voz e imagem já está disponível?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">A arquitetura multimodal (texto, áudio e imagem) faz parte do plano da plataforma e ainda está em desenvolvimento. Hoje, o atendimento automatizado é baseado em mensagens de texto no WhatsApp. Não prometemos recursos que ainda não estão em produção.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">Como funciona a demonstração?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">Nesta página mostramos uma simulação visual da conversa. Para uma demonstração real, solicite uma apresentação pelo WhatsApp — um especialista analisa sua operação e mostra como a plataforma se encaixa no seu contexto, sem compromisso.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">Existe fidelidade ou contrato de longo prazo?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">Acreditamos em parceria por resultado. Os modelos de contrato são flexíveis, porque confiamos que a eficiência do sistema é o que mantém nossos clientes a longo prazo — e não uma cláusula contratual.</div></div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-item__q" type="button" aria-expanded="false">Como contratar um plano?
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            </button>
-            <div class="faq-item__a"><div class="faq-item__a-inner">Os valores dos planos são informados sob consulta. Fale com a gente pelo WhatsApp e solicite uma apresentação — apresentamos o plano ideal para o tamanho e o momento da sua operação.</div></div>
-          </div>
-        </div>
+        <div class="faq" id="faq-list"><!-- renderizado via config.js --></div>
       </div>
     </section>
 
-    <!-- ===================== CTA FINAL ===================== -->
-    <section class="section" id="contato">
+    <!-- ===================== 10. CTA FINAL ===================== -->
+    <section class="section section--tint" id="contato">
       <div class="container">
         <div class="cta-final reveal">
-          <h2>Pronto para transformar conversas em negócios?</h2>
-          <p>Conheça a plataforma da Emergência Digital e descubra como a Bia pode atender, organizar e converter para a sua empresa.</p>
-          <div class="hero__actions">
-            <a class="btn btn--dark btn--lg" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.4.7 1.6.7 1.7.1.1.1.3 0 .5-.4.8-.9.9-.7 1.3.9 1.5 2 2.4 3.4 3.1.2.1.4.1.5-.1.1-.2.6-.7.8-.9.2-.2.3-.2.5-.1.2.1 1.2.6 1.4.7.2.1.4.2.4.3.1.1.1.5-.1 1.1Z"/></svg>
-              Solicitar demonstração
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Próximo passo</span>
+          <h2>A inteligência e a estrutura para a sua empresa crescer.</h2>
+          <p>
+            Com a Bia no centro, sites, CRM e automações conectam as etapas comerciais. Para quem deseja
+            acelerar ainda mais, existe a Agência Premium.
+          </p>
+          <div class="cta-final__actions">
+            <a class="btn btn--primary btn--lg" data-contact="whatsapp" href="#" target="_blank" rel="noopener">
+              Fale com a equipe
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn btn--ghost btn--lg" data-contact="phone" href="#">Ligar agora</a>
+            <a class="btn btn--outline btn--lg" href="#planos">Ver planos</a>
           </div>
         </div>
       </div>
@@ -459,17 +527,21 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="Emergência Digital">
-          <p>Plataforma inteligente de atendimento, automação e CRM. A Bia ajuda a sua empresa a organizar e converter oportunidades.</p>
+          <img class="footer-brand__logo" src="assets/logo.png" alt="Emergência Digital" width="708" height="195" loading="lazy" decoding="async">
+          <p>
+            Ecossistema de crescimento empresarial com a Bia no centro: atendimento, CRM, sites,
+            automações e inteligência de resultados.
+          </p>
         </div>
 
         <div class="footer-col">
           <h4>Navegação</h4>
           <ul>
-            <li><a href="#bia">A Bia</a></li>
-            <li><a href="#funil">Funil inteligente</a></li>
-            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#bia">Bia IA</a></li>
+            <li><a href="#ecossistema">Ecossistema</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
             <li><a href="#planos">Planos</a></li>
+            <li><a href="#agencia">Agência Premium</a></li>
             <li><a href="#faq">Dúvidas</a></li>
           </ul>
         </div>

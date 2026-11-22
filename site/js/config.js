@@ -1,27 +1,30 @@
 /**
  * ============================================================
- *  CONFIGURAÇÃO CENTRAL — Emergência Digital / Bia Core
+ *  CONFIGURAÇÃO CENTRAL — Emergência Digital
+ *  Ecossistema de Crescimento Empresarial / Bia
  * ============================================================
- *  Este arquivo concentra TODOS os dados comerciais, de contato
- *  e jurídicos da página. Edite aqui antes de publicar.
+ *  Este arquivo concentra os dados comerciais, de contato e
+ *  jurídicos da página. Edite aqui antes de publicar.
  *
- *  IMPORTANTE (regra de compliance):
- *  - Só inclua valores CONFIRMADOS. Não invente preços, franquias
- *    ou limites. Onde não houver dado confirmado, deixe `null` e o
- *    site exibirá automaticamente um estado "em definição".
- *  - Campos jurídicos/operacionais pendentes estão marcados com
- *    `pendente: true` e NÃO devem ser tratados como definitivos.
+ *  REGRAS DE VERACIDADE (importante):
+ *  - Só inclua valores CONFIRMADOS. Não invente preços, limites
+ *    de uso, volumes ou resultados. Onde não houver dado
+ *    confirmado, mantenha `null` — o site exibirá "Sob consulta".
+ *  - O status de cada recurso da Bia deve refletir a realidade:
+ *      "implemented"  -> disponível hoje na operação da Emergência Digital
+ *      "planned"      -> em desenvolvimento / roadmap (NÃO disponível)
+ *  - Campos jurídicos pendentes estão marcados como `null` e NÃO
+ *    devem ser tratados como definitivos.
  * ============================================================
  */
 window.SITE_CONFIG = {
   // ---- Marca ----
   brand: {
     name: "Emergência Digital",
-    product: "Bia Core",
+    product: "Bia",
     assistant: "Bia",
-    // Slogan / posicionamento (confirmado no site original)
-    tagline: "De paciente e faturamento a gente entende!",
-    logoAlt: "Emergência Digital — marketing e tecnologia para clínicas",
+    tagline: "Inteligência e estrutura para o crescimento da sua empresa.",
+    logoAlt: "Emergência Digital",
   },
 
   // ---- Contato (confirmado no site original) ----
@@ -33,7 +36,7 @@ window.SITE_CONFIG = {
     instagramUrl: "https://www.instagram.com/emergencia_digital/",
   },
 
-  // ---- Dados jurídicos / operacionais (pendentes de validação final) ----
+  // ---- Dados jurídicos / operacionais ----
   legal: {
     cnpj: "42.170.579/0001-80", // confirmado no rodapé do site original
     address: "5ª Avenida, nº 640, Municipios, Balneario Camboriu/SC, CEP 88337-305",
@@ -43,124 +46,241 @@ window.SITE_CONFIG = {
     emailContato: null, // e-mail oficial de contato — pendente
   },
 
-  // ---- Planos comerciais ----
-  //
-  //  Nomes e recursos CONFIRMADOS na captura do site original.
-  //  PREÇOS: não localizados — mantidos como null (exibidos como
-  //  "Sob consulta"). Preencha `price` quando houver valor validado.
+  // ---- Planos da Bia ----
+  //  Preços NÃO definidos: todos exibidos como "Sob consulta".
+  //  Não adicionar limites de mensagens, números, usuários ou créditos.
   plans: [
     {
       id: "essencial",
       name: "Essencial",
+      tagline: "Comece a organizar seu atendimento.",
       description:
-        "Estrutura essencial de presença digital e campanhas para começar a captar e organizar oportunidades.",
-      price: null, // ex.: 497
-      pricePeriod: null, // ex.: "mês"
-      priceNote: "Valor sob consulta",
+        "A base para centralizar contatos, dar estrutura ao atendimento e começar a acompanhar oportunidades.",
+      price: null,
+      priceNote: "Sob consulta",
+      recommended: false,
       features: [
-        "Estrutura de campanhas",
-        "Landing page de captação",
-        "Pixel e rastreamento de leads",
-        "Criativos para campanhas",
-        "Otimização mensal de anúncios",
-        "Relatório de desempenho",
+        "Bia e estrutura de atendimento",
+        "Integração com WhatsApp, conforme disponibilidade",
+        "Organização de contatos",
+        "CRM básico",
+        "Histórico de oportunidades",
+        "Acompanhamento inicial",
+        "Suporte e configuração inicial",
       ],
-      includes: [
-        "Compliance de parceiros",
-        "Suporte por e-mail",
-        "Onboarding assistido",
-      ],
-      cta: "Solicitar apresentação",
+      cta: "Solicitar proposta",
     },
     {
-      id: "crescimento",
-      name: "Crescimento",
+      id: "profissional",
+      name: "Profissional",
+      tagline: "Conecte atendimento, CRM e automações.",
       description:
-        "Funil completo com qualificação, CRM e automações para transformar conversas em negócios com escala.",
+        "Para empresas que querem conectar o atendimento ao funil comercial e reduzir o trabalho manual.",
       price: null,
-      pricePeriod: null,
-      priceNote: "Valor sob consulta",
+      priceNote: "Sob consulta",
+      recommended: true,
       features: [
-        "Landing page otimizada",
-        "Quiz de qualificação",
-        "CRM para leads",
-        "Automação de WhatsApp",
-        "Criativos profissionais",
-        "Pixel + API de conversões",
-        "Dashboard de métricas",
-        "Otimização de campanhas",
-      ],
-      includes: [
         "Tudo do Essencial",
-        "Compliance de parceiros",
-        "Reuniões mensais",
+        "CRM ampliado",
+        "Funil comercial",
+        "Automações de processos",
+        "Integração com o Motor de Sites, conforme disponibilidade",
+        "Agendamentos e acompanhamento",
+        "Indicadores de desempenho",
+        "Configuração personalizada",
       ],
-      cta: "Solicitar apresentação",
+      cta: "Solicitar proposta",
     },
     {
-      id: "autoridade",
-      name: "Autoridade",
+      id: "escala",
+      name: "Escala",
+      tagline: "Uma estrutura para operações mais complexas.",
       description:
-        "Operação completa com estratégia, automação avançada e consultoria para dominar o mercado da sua região.",
+        "Para operações com mais equipes, unidades ou necessidades específicas de integração e acompanhamento.",
       price: null,
-      pricePeriod: null,
-      priceNote: "Valor sob consulta",
+      priceNote: "Sob consulta",
+      recommended: false,
       features: [
-        "Estratégia de captação",
-        "Meta + Google",
-        "Volume ampliado de criativos",
-        "Automação avançada",
-        "CRM avançado",
-        "Dashboard de faturamento",
-        "Testes A/B",
-        "Consultoria mensal",
+        "Tudo do Profissional",
+        "Estrutura para múltiplas unidades ou equipes",
+        "Automações avançadas",
+        "Integrações personalizadas",
+        "Configurações ampliadas da Bia",
+        "Indicadores avançados",
+        "Estrutura de operação escalável",
+        "Acompanhamento prioritário",
       ],
-      includes: [
-        "Tudo do Crescimento",
-        "Compliance de parceiros",
-        "Reuniões estratégicas",
-      ],
-      cta: "Solicitar apresentação",
+      cta: "Solicitar proposta",
     },
   ],
 
   // ---- Recursos da Bia (status: implemented | planned) ----
-  //  Não anuncie como "pronto" o que ainda é planejado.
+  //  NÃO anuncie como disponível o que ainda é planejado.
   biaFeatures: [
     {
-      title: "Atendimento conversacional",
+      title: "Atendimento inteligente",
+      icon: "spark",
       status: "planned",
-      text: "Conversas naturais e assistidas por IA para responder e encaminhar o contato.",
+      text: "Condução de conversas com apoio de IA para responder, qualificar e encaminhar contatos.",
     },
     {
       title: "WhatsApp Business",
+      icon: "whatsapp",
       status: "implemented",
-      text: "Integração com o canal oficial de WhatsApp para centralizar o atendimento.",
+      text: "Atendimento centralizado no WhatsApp, com registro das conversas e automação de mensagens.",
     },
     {
       title: "Interpretação de mensagens",
+      icon: "brain",
       status: "planned",
-      text: "Leitura de intenção e contexto para qualificar a conversa automaticamente.",
-    },
-    {
-      title: "Arquitetura multimodal",
-      status: "planned",
-      text: "Preparada para texto, áudio e imagem em um mesmo fluxo de atendimento.",
+      text: "Leitura de intenção e contexto das mensagens para apoiar a qualificação do contato.",
     },
     {
       title: "Organização de contatos",
+      icon: "users",
       status: "implemented",
-      text: "Cadastro, segmentação e histórico centralizados dos contatos.",
+      text: "Cadastro, segmentação e histórico dos contatos em um único lugar.",
     },
     {
-      title: "Integração com CRM",
+      title: "CRM integrado",
+      icon: "funnel",
       status: "implemented",
-      text: "Registro e avanço do contato dentro do funil comercial.",
+      text: "Contatos e oportunidades registrados no funil comercial, com acompanhamento por etapa.",
     },
     {
-      title: "Automação de processos",
+      title: "Automações",
+      icon: "bolt",
       status: "implemented",
-      text: "Gatilhos e regras para mover etapas, enviar mensagens e criar tarefas.",
+      text: "Regras que movem etapas, criam tarefas e disparam mensagens automaticamente.",
+    },
+    {
+      title: "Agendamentos e encaminhamentos",
+      icon: "calendar",
+      status: "planned",
+      text: "Apoio ao agendamento e ao direcionamento do contato para a pessoa certa da equipe.",
+    },
+  ],
+
+  // ---- Ecossistema (6 módulos) ----
+  ecosystem: [
+    {
+      title: "Bia IA",
+      icon: "spark",
+      text: "Atendimento inteligente e automação de conversas.",
+      tag: "Núcleo do ecossistema",
+    },
+    {
+      title: "Motor de Sites",
+      icon: "globe",
+      text: "Criação de sites profissionais e páginas de captação.",
+      highlight: true,
+      tag: "Produto do ecossistema",
+    },
+    {
+      title: "CRM",
+      icon: "funnel",
+      text: "Organização de contatos, oportunidades e processos comerciais.",
+    },
+    {
+      title: "Automações",
+      icon: "bolt",
+      text: "Fluxos inteligentes para conectar tarefas e etapas da operação.",
+    },
+    {
+      title: "Tráfego e Criativos",
+      icon: "target",
+      text: "Aquisição de oportunidades através de campanhas e comunicação estratégica.",
+    },
+    {
+      title: "Inteligência de Resultados",
+      icon: "chart",
+      text: "Acompanhamento de indicadores, oportunidades e desempenho.",
+    },
+  ],
+
+  // ---- Módulos adicionais ----
+  additionalModules: [
+    {
+      title: "Motor de Sites",
+      icon: "globe",
+      text: "Sites profissionais e páginas de captação para apresentar sua empresa e receber novos contatos.",
+    },
+    {
+      title: "CRM",
+      icon: "funnel",
+      text: "Estrutura para organizar contatos, oportunidades e o processo comercial da sua equipe.",
+    },
+    {
+      title: "Automações adicionais",
+      icon: "bolt",
+      text: "Fluxos extras para reduzir tarefas manuais e conectar etapas da operação.",
+    },
+    {
+      title: "Integrações personalizadas",
+      icon: "plug",
+      text: "Conexões sob medida com as ferramentas e os processos que sua empresa já utiliza.",
+    },
+  ],
+
+  // ---- Agência Premium (opcional) ----
+  agency: {
+    title: "Quer ir além? Conheça a Agência Premium.",
+    subtitle:
+      "A inteligência da Bia trabalhando junto com uma equipe especializada para acelerar o crescimento da sua empresa.",
+    services: [
+      "Estratégia de aquisição",
+      "Gestão de campanhas Meta Ads",
+      "Gestão de campanhas Google Ads",
+      "Criação de criativos publicitários",
+      "Planejamento de campanhas",
+      "Otimização de resultados",
+      "Estratégias de conversão",
+      "Integração da operação de marketing com a Bia",
+    ],
+    note:
+      "A Agência Premium é opcional. Você pode contratar a plataforma sem contratar a agência — ou contratar serviços específicos conforme a necessidade e a disponibilidade.",
+    differential:
+      "Os anúncios e criativos atraem pessoas interessadas, e a Bia participa da etapa de atendimento e organização dessas oportunidades, reduzindo a dependência de trabalho manual.",
+    cta: "Conhecer a Agência Premium",
+  },
+
+  // ---- Perguntas frequentes ----
+  faq: [
+    {
+      q: "O que é a Bia?",
+      a: "A Bia é a inteligência operacional da Emergência Digital. Ela apoia o atendimento, organiza contatos e oportunidades e automatiza etapas da operação comercial, trabalhando junto com a sua equipe.",
+    },
+    {
+      q: "A Bia substitui minha equipe?",
+      a: "Não. A Bia foi pensada para assumir a parte operacional e repetitiva, liberando sua equipe para o que exige atenção humana: relacionamento, negociação e decisões.",
+    },
+    {
+      q: "Preciso ter um site para contratar?",
+      a: "Não. A Bia pode ser contratada de forma independente. O Motor de Sites é um módulo adicional para quem também precisa de presença digital e páginas de captação.",
+    },
+    {
+      q: "Posso contratar somente a Bia?",
+      a: "Sim. A Bia é o eixo central da proposta e pode ser contratada sozinha. Os demais módulos são opcionais e podem ser adicionados conforme a necessidade da sua operação.",
+    },
+    {
+      q: "Posso contratar o CRM separadamente?",
+      a: "O CRM é um dos módulos do ecossistema e poderá ser contratado separadamente, conforme a disponibilidade comercial e a necessidade da sua operação. Fale com a equipe para avaliar o cenário.",
+    },
+    {
+      q: "Posso contratar somente o Motor de Sites?",
+      a: "Sim, o Motor de Sites é um produto do ecossistema e poderá ser contratado de forma independente. A contratação da Bia não é obrigatória para contratar o Motor de Sites.",
+    },
+    {
+      q: "A Agência Premium é obrigatória?",
+      a: "Não. A Agência Premium é opcional. Você pode contratar a plataforma e utilizar os módulos conforme sua necessidade, sem contratar a agência.",
+    },
+    {
+      q: "Como funciona a contratação?",
+      a: "O primeiro passo é falar com a nossa equipe. Entendemos a operação da sua empresa, apresentamos os planos e módulos disponíveis e definimos a configuração mais adequada. Os valores são informados sob consulta.",
+    },
+    {
+      q: "Quais funcionalidades já estão disponíveis?",
+      a: "A página indica o status de cada recurso da Bia. Os itens marcados como “Disponível” têm base no sistema existente da Emergência Digital. Os marcados como “Em desenvolvimento” fazem parte da evolução da plataforma e ainda não estão disponíveis em produção.",
     },
   ],
 };
