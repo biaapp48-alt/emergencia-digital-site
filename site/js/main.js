@@ -208,37 +208,47 @@
   }
 
   /* ---------------- Render: planos ---------------- */
-  function formatPrice(plan) {
-    if (plan.price == null) {
-      return (
-        '<div class="plan__price plan__price--consult">' +
-        "<strong>" + escapeHtml(plan.priceNote || "Sob consulta") + "</strong>" +
-        "<span>Valores e limites definidos com a equipe</span>" +
-        "</div>"
-      );
-    }
-    var value = Number(plan.price).toLocaleString("pt-BR", {
+  function money(n) {
+    return Number(n).toLocaleString("pt-BR", {
       minimumFractionDigits: 0,
       maximumFractionDigits: 2,
     });
-    var period = plan.pricePeriod ? " / " + plan.pricePeriod : "";
-    return (
-      '<div class="plan__price"><strong><span class="currency">R$</span>' +
-      value + "</strong><span>" + escapeHtml(period.replace(" / ", "")) + "</span></div>"
-    );
   }
 
   function renderPlans() {
     var wrap = document.getElementById("plans-list");
     if (!wrap || !cfg.plans) return;
+    var meta = cfg.plansMeta || {};
     wrap.innerHTML = cfg.plans
       .map(function (plan, i) {
         var featured = plan.recommended;
+        var normal = money(plan.normalPrice);
+        var founder = money(plan.founderPrice);
+        var period = plan.period ? "/" + plan.period : "";
+
         var features = plan.features
           .map(function (f) {
             return "<li>" + icon("check") + "<span>" + escapeHtml(f) + "</span></li>";
           })
           .join("");
+
+        var ai = plan.aiIncluded
+          ? '<li class="plan__feature-ai">' + icon("spark") + "<span>" +
+            escapeHtml(meta.aiFeature || "Franquia mensal de IA incluída") + "</span></li>"
+          : "";
+
+        var setup = "";
+        if (plan.setup) {
+          setup =
+            '<div class="plan__setup">' +
+            '<span class="plan__setup-label">' +
+            escapeHtml(meta.setupLabel || "Implantação · cobrança única") + "</span>" +
+            '<span class="plan__setup-values"><strong>' + escapeHtml(plan.setup.total) + "</strong>" +
+            "<span>" + escapeHtml(meta.setupOr || "ou") + " " +
+            escapeHtml(plan.setup.installments) + "</span></span>" +
+            "</div>";
+        }
+
         return (
           '<article class="plan' + (featured ? " plan--recommended" : "") +
           ' reveal" data-delay="' + i + '">' +
@@ -248,8 +258,22 @@
           '<h3 class="plan__name">' + escapeHtml(plan.name) + "</h3>" +
           '<p class="plan__tagline">' + escapeHtml(plan.tagline || "") + "</p>" +
           "</div>" +
-          formatPrice(plan) +
-          '<ul class="plan__features">' + features + "</ul>" +
+          '<div class="plan__price">' +
+          '<div class="plan__price-normal"><span>' +
+          escapeHtml(meta.normalLabel || "Preço normal") + "</span><s>R$ " + normal + period + "</s></div>" +
+          '<div class="plan__price-founder">' +
+          '<strong><span class="plan__currency">R$</span>' + founder +
+          '<span class="plan__period">' + period + "</span></strong>" +
+          '<span class="plan__founder-label">' +
+          escapeHtml(meta.founderLabel || "Condição de fundador") + "</span>" +
+          "</div>" +
+          '<span class="plan__founder-badge">' +
+          escapeHtml(meta.founderBadge || "Condição especial de pré-lançamento") + "</span>" +
+          "</div>" +
+          setup +
+          '<ul class="plan__features">' + features + ai + "</ul>" +
+          '<p class="plan__validity">' +
+          escapeHtml(meta.founderValidity || "Condição de fundador válida por 12 meses.") + "</p>" +
           '<a class="btn ' + (featured ? "btn--primary" : "btn--outline") +
           ' btn--block" data-contact="whatsapp" href="#" target="_blank" rel="noopener">' +
           escapeHtml(plan.cta || "Solicitar proposta") + icon("arrow") + "</a>" +
@@ -261,15 +285,50 @@
     observeReveal();
   }
 
+  /* ---------------- Render: nota dos planos ---------------- */
+  function renderPlansFoot() {
+    var wrap = document.getElementById("plans-foot");
+    if (!wrap || !cfg.plansMeta) return;
+    var meta = cfg.plansMeta;
+    wrap.innerHTML =
+      '<p class="plans-note plans-note--ai"><strong>' +
+      escapeHtml(meta.aiFeature || "Franquia mensal de IA incluída") + ".</strong> " +
+      escapeHtml(meta.aiDisclaimer || "") + "</p>" +
+      '<p class="plans-note plans-note--soft">' +
+      escapeHtml(meta.setupDisclaimer || "") + " " +
+      escapeHtml(meta.founderValidity || "") + "</p>";
+  }
+
   /* ---------------- Render: Agência Premium ---------------- */
   function renderAgency() {
-    var wrap = document.getElementById("agency-services");
-    if (!wrap || !cfg.agency || !cfg.agency.services) return;
-    wrap.innerHTML = cfg.agency.services
-      .map(function (s) {
-        return "<li>" + icon("check") + "<span>" + escapeHtml(s) + "</span></li>";
-      })
-      .join("");
+    var tiersWrap = document.getElementById("agency-tiers");
+    var feeWrap = document.getElementById("agency-fee");
+    var servicesWrap = document.getElementById("agency-services");
+
+    if (tiersWrap && cfg.agency && cfg.agency.tiers) {
+      tiersWrap.innerHTML = cfg.agency.tiers
+        .map(function (t) {
+          return (
+            '<div class="agency-tier">' +
+            '<span class="agency-tier__name">' + escapeHtml(t.name) + "</span>" +
+            '<span class="agency-tier__price">' + escapeHtml(t.price) + "</span>" +
+            "</div>"
+          );
+        })
+        .join("");
+    }
+
+    if (feeWrap && cfg.agency && cfg.agency.feeNote) {
+      feeWrap.textContent = cfg.agency.feeNote;
+    }
+
+    if (servicesWrap && cfg.agency && cfg.agency.services) {
+      servicesWrap.innerHTML = cfg.agency.services
+        .map(function (s) {
+          return "<li>" + icon("check") + "<span>" + escapeHtml(s) + "</span></li>";
+        })
+        .join("");
+    }
   }
 
   /* ---------------- Render: FAQ ---------------- */
@@ -385,6 +444,7 @@
     renderEcosystem();
     renderModules();
     renderPlans();
+    renderPlansFoot();
     renderAgency();
     renderFaq();
     startChatDemo();

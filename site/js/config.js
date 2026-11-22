@@ -9,7 +9,8 @@
  *  REGRAS DE VERACIDADE (importante):
  *  - Só inclua valores CONFIRMADOS. Não invente preços, limites
  *    de uso, volumes ou resultados. Onde não houver dado
- *    confirmado, mantenha `null` — o site exibirá "Sob consulta".
+ *    confirmado, mantenha `null` ou use um texto neutro
+ *    (ex.: "Sob consulta").
  *  - O status de cada recurso da Bia deve refletir a realidade:
  *      "implemented"  -> disponível hoje na operação da Emergência Digital
  *      "planned"      -> em desenvolvimento / roadmap (NÃO disponível)
@@ -46,9 +47,24 @@ window.SITE_CONFIG = {
     emailContato: null, // e-mail oficial de contato — pendente
   },
 
-  // ---- Planos da Bia ----
-  //  Preços NÃO definidos: todos exibidos como "Sob consulta".
-  //  Não adicionar limites de mensagens, números, usuários ou créditos.
+  // ---- Planos da Bia (política comercial de pré-lançamento) ----
+  //  Valores centralizados aqui. Condição de fundador válida por 12 meses.
+  //  Implantação = cobrança única, parcelada conforme o plano, FORA da mensalidade.
+  //  Não divulgar quantidades de créditos, limites de mensagens ou consumo ilimitado.
+  plansMeta: {
+    periodLabel: "/mês",
+    normalLabel: "Preço normal",
+    founderLabel: "Condição de fundador",
+    founderBadge: "Condição especial de pré-lançamento",
+    setupLabel: "Implantação · cobrança única",
+    setupOr: "ou",
+    founderValidity: "Condição de fundador válida por 12 meses.",
+    aiFeature: "Franquia mensal de IA incluída",
+    aiDisclaimer:
+      "A Bia possui uma franquia mensal de processamento de inteligência artificial. O consumo varia conforme a modalidade e a complexidade das interações. O painel permite acompanhar o uso e solicitar créditos adicionais.",
+    setupDisclaimer:
+      "A implantação é uma cobrança única, parcelada conforme o plano, e não faz parte da mensalidade recorrente.",
+  },
   plans: [
     {
       id: "essencial",
@@ -56,8 +72,11 @@ window.SITE_CONFIG = {
       tagline: "Comece a organizar seu atendimento.",
       description:
         "A base para centralizar contatos, dar estrutura ao atendimento e começar a acompanhar oportunidades.",
-      price: null,
-      priceNote: "Sob consulta",
+      normalPrice: 197,
+      founderPrice: 147,
+      period: "mês",
+      setup: { total: "R$ 490", installments: "2× R$ 245" },
+      aiIncluded: true,
       recommended: false,
       features: [
         "Bia e estrutura de atendimento",
@@ -76,8 +95,11 @@ window.SITE_CONFIG = {
       tagline: "Conecte atendimento, CRM e automações.",
       description:
         "Para empresas que querem conectar o atendimento ao funil comercial e reduzir o trabalho manual.",
-      price: null,
-      priceNote: "Sob consulta",
+      normalPrice: 397,
+      founderPrice: 297,
+      period: "mês",
+      setup: { total: "R$ 990", installments: "3× R$ 330" },
+      aiIncluded: true,
       recommended: true,
       features: [
         "Tudo do Essencial",
@@ -97,8 +119,11 @@ window.SITE_CONFIG = {
       tagline: "Uma estrutura para operações mais complexas.",
       description:
         "Para operações com mais equipes, unidades ou necessidades específicas de integração e acompanhamento.",
-      price: null,
-      priceNote: "Sob consulta",
+      normalPrice: 797,
+      founderPrice: 597,
+      period: "mês",
+      setup: { total: "R$ 1.990", installments: "4× R$ 497,50" },
+      aiIncluded: true,
       recommended: false,
       features: [
         "Tudo do Profissional",
@@ -227,6 +252,13 @@ window.SITE_CONFIG = {
     title: "Quer ir além? Conheça a Agência Premium.",
     subtitle:
       "A inteligência da Bia trabalhando junto com uma equipe especializada para acelerar o crescimento da sua empresa.",
+    tiers: [
+      { name: "Gestão de aquisição", price: "R$ 1.490/mês" },
+      { name: "Growth multicanal", price: "R$ 2.490/mês" },
+      { name: "Operação personalizada", price: "a partir de R$ 3.490/mês" },
+    ],
+    feeNote:
+      "Os valores são honorários de serviço. A verba de anúncios é paga separadamente pelo cliente.",
     services: [
       "Estratégia de aquisição",
       "Gestão de campanhas Meta Ads",
@@ -238,7 +270,7 @@ window.SITE_CONFIG = {
       "Integração da operação de marketing com a Bia",
     ],
     note:
-      "A Agência Premium é opcional. Você pode contratar a plataforma sem contratar a agência — ou contratar serviços específicos conforme a necessidade e a disponibilidade.",
+      "A Agência Premium é opcional. Você pode contratar a plataforma sem contratar a agência — ou contratar serviços individuais, como criação de criativos, sites e projetos específicos, conforme a necessidade e a disponibilidade.",
     differential:
       "Os anúncios e criativos atraem pessoas interessadas, e a Bia participa da etapa de atendimento e organização dessas oportunidades, reduzindo a dependência de trabalho manual.",
     cta: "Conhecer a Agência Premium",
@@ -276,7 +308,19 @@ window.SITE_CONFIG = {
     },
     {
       q: "Como funciona a contratação?",
-      a: "O primeiro passo é falar com a nossa equipe. Entendemos a operação da sua empresa, apresentamos os planos e módulos disponíveis e definimos a configuração mais adequada. Os valores são informados sob consulta.",
+      a: "O primeiro passo é falar com a nossa equipe. Entendemos a operação da sua empresa, apresentamos os planos e módulos disponíveis e definimos a configuração mais adequada. Os valores de pré-lançamento estão descritos nos planos.",
+    },
+    {
+      q: "O que é a condição de cliente fundador?",
+      a: "A condição de cliente fundador dá acesso aos valores especiais de pré-lançamento dos planos da Bia. Ela é válida por 12 meses. Fale com a equipe para entender como participar desta primeira etapa do ecossistema.",
+    },
+    {
+      q: "Como funciona a franquia mensal de IA?",
+      a: "Cada plano inclui uma franquia mensal de processamento de inteligência artificial. O consumo varia conforme a modalidade e a complexidade das interações, e o painel permite acompanhar o uso e solicitar créditos adicionais.",
+    },
+    {
+      q: "A implantação faz parte da mensalidade?",
+      a: "Não. A implantação é uma cobrança única, parcelada conforme o plano, e não integra a mensalidade recorrente.",
     },
     {
       q: "Quais funcionalidades já estão disponíveis?",

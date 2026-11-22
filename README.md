@@ -18,17 +18,18 @@ Landing page institucional e comercial da **Emergência Digital**, apresentando 
 
 ```
 site/                         # site estático (publicado)
-  index.html                  # landing page completa (10 seções)
+  index.html                  # landing page completa (11 seções)
   politica-de-privacidade.html
   404.html
   css/
     styles.css                # tema escuro premium da landing
     legal.css                 # tema claro e independente da página legal
   js/
-    config.js                 # planos, recursos, módulos, agência, FAQ e contato
+    config.js                 # valores comerciais, planos, módulos, agência, FAQ e contato
     main.js                   # renderização e interações
   assets/
     logo.png
+    bia-hero.png              # imagem oficial da Bia (1199×1312)
     favicon.svg
     og-image.png              # 1200×630, tema escuro
   robots.txt
@@ -44,8 +45,9 @@ docs/
 
 - HTML + CSS + JavaScript puro (sem build, sem servidor).
 - Tipografia **Poppins** (Google Fonts), com fallback para fontes do sistema.
-- Núcleo abstrato da Bia construído em **CSS/SVG** — sem personagem humano,
-  avatar ou banco de imagens.
+- Hero com a **imagem oficial da Bia** (`assets/bia-hero.png`) integrada ao
+  fundo escuro, com `object-fit: contain`, proporção preservada e
+  responsividade em desktop, tablet e celular.
 - Layout responsivo (desktop, tablet e celular), com foco em acessibilidade e
   `prefers-reduced-motion`.
 
@@ -54,8 +56,14 @@ docs/
 Tudo o que é comercial, de contato e jurídico fica centralizado em
 `site/js/config.js`.
 
-- **Preços:** nenhum valor inventado. Todos os planos usam `price: null` e são
-  exibidos como **“Sob consulta”**.
+- **Preços:** valores de **pré-lançamento** confirmados e centralizados em
+  `config.js`. Cada plano traz preço normal (riscado), preço fundador (em
+  destaque) e implantação como cobrança única parcelada (fora da mensalidade).
+  A condição de fundador é válida por 12 meses.
+- **Franquia de IA:** cada plano inclui “Franquia mensal de IA incluída”, com o
+  aviso de que o consumo varia e o painel permite acompanhar o uso e solicitar
+  créditos adicionais. Sem quantidades de créditos, limites de mensagens ou
+  consumo ilimitado declarados.
 - **Limites:** não há limites de mensagens, números, usuários, sites ou créditos
   declarados — serão definidos comercialmente.
 - **Status dos recursos da Bia:** `implemented` (disponível na operação atual) ou
@@ -69,8 +77,9 @@ Tudo o que é comercial, de contato e jurídico fica centralizado em
 
 1. Abra `site/js/config.js`.
 2. Atualize planos, recursos, módulos, serviços da agência ou FAQ.
-3. Para preços validados, troque `price: null` por um número e preencha
-   `pricePeriod`. Enquanto forem `null`, o site mostra “Sob consulta”.
+3. Para os preços, edite `plans` (preço normal, preço fundador e implantação) e
+   `plansMeta` (textos e avisos). Para a agência, edite `agency.tiers` e
+   `agency.feeNote`. Tudo é renderizado a partir deste único arquivo.
 4. Para marcar um recurso como disponível, use `status: "implemented"`.
 5. Contato e dados jurídicos confirmados ficam em `contact` e `legal`.
 
