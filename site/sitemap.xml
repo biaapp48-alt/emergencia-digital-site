@@ -7,9 +7,27 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://biaapp48-alt.github.io/emergencia-digital-site/politica-de-privacidade/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://biaapp48-alt.github.io/emergencia-digital-site/politica-de-privacidade.html</loc>
     <lastmod>2026-11-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biaapp48-alt.github.io/emergencia-digital-site/exclusao-de-dados/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://biaapp48-alt.github.io/emergencia-digital-site/exclusao-de-dados.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
