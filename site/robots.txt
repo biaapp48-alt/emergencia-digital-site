@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biaapp48-alt.github.io/emergencia-digital-site/sitemap.xml
