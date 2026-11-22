@@ -162,6 +162,7 @@ submetida à Meta** enquanto esses itens não forem validados.
   versão com Poppins quando desejado.
 - Poppins carregada via Google Fonts (fallback `system-ui` já previsto).
 
-## 12. Hash do commit publicado
+## 12. Hash dos commits publicados
 
-`16c4155ddca8230688d8be260bddeb0992a8e9c3`
+- Commit do site (conteúdo publicado/deployado): `16c4155ddca8230688d8be260bddeb0992a8e9c3`
+- HEAD final do repositório (adição deste relatório): `fcfb190b37a3e5f62e159597c1d4075e4027c7c0`
